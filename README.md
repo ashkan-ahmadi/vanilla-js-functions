@@ -36,9 +36,10 @@ hasItemInArray('corn', veggies) // true
 
 The `round` function is a merged version of the three built in Math methods: `round`, `ceil`, and `floor`.
 
-| name  | argument |
-| ----- | -------- |
-| round | number   |
+| argument | type   | required | default |
+| -------- | ------ | -------- | ------- |
+| number   | number | yes      |         |
+| {round}  | string | no       | nearest |
 
 ```js
 import { round } from './functions/math.js'
@@ -60,6 +61,21 @@ import { factorial } from './functions/math.js'
 
 factorial(4) // 24
 ```
+
+### calculateAreaOfRectangle
+
+Calculates the area of a rectangle based on its width and height.
+
+```js
+import { calculateAreaOfRectangle } from './functions/math.js'
+
+calculateAreaOfRectangle(3, 5) // 15
+```
+
+| argument | type   | required | default |
+| -------- | ------ | -------- | ------- |
+| width    | number | yes      | 10      |
+| height   | number | yes      | 1       |
 
 ## Array
 
