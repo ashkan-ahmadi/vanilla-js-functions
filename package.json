@@ -1,0 +1,13 @@
+{
+  "name": "js-functions",
+  "version": "1.0.0",
+  "description": "This is a series of Javascript helper functions you can use in any project",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [
+    "Javascript",
+    "function"
+  ],
+  "author": "Ashkan Ahmadi",
+  "license": "ISC"
+}
