@@ -9,11 +9,11 @@ Simply import any function you want to use
 Example:
 
 ```js
-import { isPalindrome } from './functions/string.js'
+import { isPalindrome } from 'vanilla-js-functions'
 
 const text = 'racecar'
 
-isPalindrome(text) // false
+isPalindrome(text) // true
 ```
 
 ## Order of parameters
@@ -29,6 +29,13 @@ const veggies = ['potato', 'corn', 'carrot']
 
 hasItemInArray('corn', veggies) // true
 ```
+
+## Function names
+
+I have done my best to name the functions in a descriptive and clear manner.
+
+- All functions starting with `is` and `has` return `true` or `false`
+- All functions follow the camelCase naming convention
 
 ## Math
 
