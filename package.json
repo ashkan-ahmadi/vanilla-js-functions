@@ -1,14 +1,22 @@
 {
-  "name": "js-functions",
+  "name": "vanilla-js-functions",
   "version": "1.0.0",
-  "description": "This is a series of Javascript helper functions you can use in any project",
+  "description": "This is a series of Javascript helper functions you can use in any project.",
   "main": "index.js",
-  "type": "module",
   "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashkan-ahmadi/vanilla-js-functions.git"
+  },
   "keywords": [
-    "Javascript",
-    "function"
+    "vanilla",
+    "js",
+    "functions"
   ],
   "author": "Ashkan Ahmadi",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ashkan-ahmadi/vanilla-js-functions/issues"
+  },
+  "homepage": "https://github.com/ashkan-ahmadi/vanilla-js-functions#readme"
 }
