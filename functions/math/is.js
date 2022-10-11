@@ -27,6 +27,7 @@ export const isPositiveNumber = number => {
   if (typeof number !== 'number') throw new Error('Must provide a number type.')
   return number >= 0
 }
+
 export const isPrimeNumber = number => {
   if (typeof number !== 'number') throw new Error('Must provide a number type.')
   if (number === 1) throw new Error('1 is neither prime nor composite number.')
