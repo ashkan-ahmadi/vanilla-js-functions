@@ -44,3 +44,23 @@ export const calculateHypotenuse = (a, b) => {
   if (typeof a !== 'number' || typeof b !== 'number') throw new Error('Must provide a number type.')
   return Math.sqrt(a * a + b * b)
 }
+
+export const calculateDeviationFromMean = (array, mean) => {
+  if (!Array.isArray(array)) throw new Error('Argument must be an array')
+  if (typeof mean !== 'number') throw new Error('Must provide a number type.')
+
+  return array.map(number => number - mean)
+}
+
+export const calculateStandardDeviation = (array, sample = false) => {
+  if (!Array.isArray(array)) throw new Error('Argument must be an array')
+
+  // https://www.scribbr.com/statistics/standard-deviation/
+  const mean = calculateAverage(array)
+  const deviated = calculateDeviationFromMean(array, mean)
+  const squared = deviated.map(number => number ** 2)
+  const sum = calculateSum(squared)
+  const length = array.length
+  const variance = sample ? sum / (length - 1) : sum / length
+  return Math.sqrt(variance)
+}
