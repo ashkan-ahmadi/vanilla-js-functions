@@ -1,4 +1,4 @@
-export const round = (number, options = {}) => {
+export const roundNumber = (number, options = {}) => {
   const defaultOptions = {
     round: 'nearest',
   }
@@ -11,24 +11,24 @@ export const round = (number, options = {}) => {
   throw new Error('Invalid option. You may use: nearest|up|down')
 }
 
-export const sum = array => {
+export const calculateSum = array => {
   if (!Array.isArray(array)) throw new Error('Argument must be an array')
   return array.reduce((total, currentItem) => total + currentItem, 0)
 }
 
-export const average = array => {
+export const calculateAverage = array => {
   if (!Array.isArray(array)) throw new Error('Argument must be an array')
   const total = array.reduce((total, currentItem) => total + currentItem, 0)
   const count = array.length
   return total / count
 }
 
-export const product = array => {
+export const calculateProduct = array => {
   if (!Array.isArray(array)) throw new Error('Argument must be an array')
   return array.reduce((total, currentItem) => total * currentItem, 1)
 }
 
-export const factorial = number => {
+export const calculateFactorial = number => {
   if (number < 0) throw new Error('Number provided cannot be negative')
   if (number === 0 || number === 1) return 1
   if (number !== Math.floor(number)) throw new Error('You must use whole numbers. Use the Gamma Function for demicals.')
@@ -43,17 +43,17 @@ export const factorial = number => {
   return total
 }
 
-export const largest = array => {
+export const getLargestNumber = array => {
   if (!Array.isArray(array)) throw new Error('Argument must be an array')
   return array.reduce((a, b) => Math.max(a, b), -Infinity)
 }
 
-export const smallest = array => {
+export const getSmallestNumber = array => {
   if (!Array.isArray(array)) throw new Error('Argument must be an array')
   return Math.min(...array)
 }
 
-export const randomNumber = (min = 1, max = 100) => {
+export const generateRandomNumber = (min = 1, max = 100) => {
   if (min > max) throw new Error('Minimum value cannot be bigger than maximum value')
   min = Math.ceil(min)
   max = Math.floor(max)
@@ -75,12 +75,12 @@ export const calculateHypotenuse = (a, b) => {
   return Math.sqrt(a * a + b * b)
 }
 
-export const isOdd = number => {
+export const isOddNumber = number => {
   if (typeof number !== 'number') throw new Error('Must provide a number type.')
   return number % 2 !== 0
 }
 
-export const isEven = number => {
+export const isEvenNumber = number => {
   if (typeof number !== 'number') throw new Error('Must provide a number type.')
   return number % 2 === 0
 }
