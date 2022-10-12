@@ -6,6 +6,7 @@
 - calculateAreaOfCircle
 - calculateAreaOfRectangle
 - calculateAverage
+- calculateCorrelation
 - calculateDeviationFromMean
 - calculateFactorial
 - calculateHypotenuse

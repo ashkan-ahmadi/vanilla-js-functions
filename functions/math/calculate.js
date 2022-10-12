@@ -64,3 +64,34 @@ export const calculateStandardDeviation = (array, sample = false) => {
   const variance = sample ? sum / (length - 1) : sum / length
   return Math.sqrt(variance)
 }
+
+export const calculateCorrelation = (x, y) => {
+  if (!Array.isArray(x) || !Array.isArray(y)) throw new Error('Argument must be an array')
+  if (x.length !== y.length) throw new Error('The arrays do not have the same length.')
+
+  // https://corporatefinanceinstitute.com/resources/knowledge/finance/correlation/
+  const length = x.length
+
+  // step 2: calculate means
+  const meanX = calculateAverage(x)
+  const meanY = calculateAverage(y)
+
+  // step 3: calculate deviation of each value
+  const a = x.map(number => number - meanX)
+  const b = y.map(number => number - meanY)
+
+  // step 4: cross-multiply and then sum
+  let multiplied = []
+  for (let i = 0; i < length; i++) {
+    multiplied.push(a[i] * b[i])
+  }
+  const sumMultiplied = calculateSum(multiplied)
+
+  // step 5: square each value
+  const a2 = a.map(number => number ** 2)
+  const b2 = b.map(number => number ** 2)
+  const suma2 = calculateSum(a2)
+  const sumb2 = calculateSum(b2)
+
+  return sumMultiplied / Math.sqrt(suma2 * sumb2)
+}
