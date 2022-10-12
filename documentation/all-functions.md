@@ -21,7 +21,9 @@
 - getEvenNumbers
 - getLargestNumber
 - getLocalStorage
+- getNegativeNumbers
 - getOddNumbers
+- getPositiveNumbers
 - getSmallestNumber
 - hasItemInArray
 - hasNumbers

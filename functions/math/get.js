@@ -17,3 +17,13 @@ export const getOddNumbers = array => {
   if (!Array.isArray(array)) throw new Error('Argument must be an array')
   return array.filter(number => number % 2 !== 0)
 }
+
+export const getPositiveNumbers = array => {
+  if (!Array.isArray(array)) throw new Error('Argument must be an array')
+  return array.filter(number => number >= 0)
+}
+
+export const getNegativeNumbers = array => {
+  if (!Array.isArray(array)) throw new Error('Argument must be an array')
+  return array.filter(number => number < 0)
+}
