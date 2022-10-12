@@ -16,6 +16,7 @@
 - capitalizeFirstLetter
 - convertToCamelCase
 - filterOutNegativeNumbers
+- generateHEXColor
 - generateRandomNumber
 - getCookie
 - getEvenNumbers
