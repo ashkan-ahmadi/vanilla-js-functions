@@ -45,6 +45,8 @@ export const isPrimeNumber = number => {
   return isPrime
 }
 
-export const isNumber = number => {
-  return typeof number === 'number'
+export const isNumber = (number, coersion = false) => {
+  // isNaN(1) === isNaN('1')
+  // typeof 1 !== typeof '1
+  return coersion ? !isNaN(number) : typeof number
 }
