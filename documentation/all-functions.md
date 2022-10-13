@@ -25,6 +25,7 @@
 - getNegativeNumbers
 - getOddNumbers
 - getPositiveNumbers
+- getRandomItem
 - getSmallestNumber
 - hasItemInArray
 - hasNumbers
