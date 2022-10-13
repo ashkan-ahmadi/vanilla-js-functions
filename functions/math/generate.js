@@ -6,6 +6,8 @@ export const generateRandomNumber = (min = 1, max = 100) => {
 }
 
 export const generateHEXColor = () => {
+  // source: https://vanillajstoolkit.com/helpers/createcolor/
+
   const hex = ['a', 'b', 'c', 'd', 'e', 'f', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
 
   /**
