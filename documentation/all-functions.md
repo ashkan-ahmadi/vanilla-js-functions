@@ -29,6 +29,7 @@
 - getRandomItem
 - getSmallestNumber
 - hasItemInArray
+- hasKey
 - hasNumbers
 - isArray
 - isEvenNumber
