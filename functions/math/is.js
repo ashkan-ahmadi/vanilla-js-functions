@@ -44,3 +44,7 @@ export const isPrimeNumber = number => {
 
   return isPrime
 }
+
+export const isNumber = number => {
+  return typeof number === 'number'
+}

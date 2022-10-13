@@ -34,6 +34,7 @@
 - isEvenNumber
 - isFloatNumber
 - isNegativeNumber
+- isNumber
 - isOddNumber
 - isPalindrome
 - isPositiveNumber
