@@ -1,6 +1,17 @@
+import { isNumber } from './is.js'
+
 export const calculateSum = array => {
   if (!Array.isArray(array)) throw new Error('Argument must be an array')
-  return array.reduce((total, currentItem) => total + currentItem, 0)
+
+  let count = 0
+
+  array.forEach(num => {
+    if (isNumber(num)) {
+      count = count + num
+    }
+  })
+
+  return count
 }
 
 export const calculateAverage = array => {
