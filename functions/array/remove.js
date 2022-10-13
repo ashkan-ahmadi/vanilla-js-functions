@@ -11,3 +11,9 @@ export const removeItemFromArray = (item, array) => {
 
   return false
 }
+
+export const removeDuplicates = array => {
+  if (!Array.isArray(array)) throw new Error('Argument must be an array')
+
+  return Array.from(new Set(array))
+}

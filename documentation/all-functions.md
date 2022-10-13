@@ -39,6 +39,7 @@
 - isPrimeNumber
 - isString
 - isWholeNumber
+- removeDuplicates
 - removeItemFromArray
 - roundNumber
 - scrollToElementById
