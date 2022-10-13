@@ -49,3 +49,18 @@ export const generateHEXColor = () => {
 
   return hexColor()
 }
+
+export const generateRangeOfNumbers = (min = 1, max = 10, step = 1) => {
+  if (min > max) throw new Error('Minimum value cannot be bigger than maximum value')
+  if (step > max - min) throw new Error('Step is bigger than the difference of min and max')
+
+  let result = []
+
+  const round = 1 / step // getting the rounding value dynamically
+
+  for (let i = min; i <= max; i = i + step) {
+    result.push(Math.round(i * round) / round) // rounding the numbers
+  }
+
+  return result
+}

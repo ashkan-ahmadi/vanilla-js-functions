@@ -18,6 +18,7 @@
 - filterOutNegativeNumbers
 - generateHEXColor
 - generateRandomNumber
+- generateRangeOfNumbers
 - getCookie
 - getEvenNumbers
 - getLargestNumber
