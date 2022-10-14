@@ -44,6 +44,7 @@
 - isWholeNumber
 - removeDuplicates
 - removeItemFromArray
+- removeNonNumberItems
 - roundNumber
 - scrollToElementById
 - scrollToTopOfPage
