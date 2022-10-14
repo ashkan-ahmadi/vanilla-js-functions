@@ -1,5 +1,4 @@
-import { removeNonNumberItems } from '../functions.js'
-import { isNumber } from './is.js'
+import { removeNonNumberItems, isNumber, sortNumbers } from '../functions.js'
 
 export const calculateAreaOfCircle = (radius = 1) => {
   if (typeof radius !== 'number') throw new Error('Must provide a number type.')
@@ -84,9 +83,7 @@ export const calculateMedian = array => {
 
   const items = removeNonNumberItems([...array])
 
-  items.sort(function (a, b) {
-    return a - b
-  })
+  sortNumbers(items)
 
   const half = Math.floor(items.length / 2)
 
