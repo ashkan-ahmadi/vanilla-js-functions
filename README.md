@@ -37,4 +37,6 @@ I have done my best to name the functions in a descriptive and clear manner.
 - All functions starting with `is` and `has` return `true` or `false`
 - All functions follow the camelCase naming convention
 
-## Math
+## Credit
+
+- [Ashkan Ahmadi](https://twitter.com/ashkan_ahmadi)
