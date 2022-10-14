@@ -50,4 +50,4 @@
 - scrollToTopOfPage
 - setCookie
 - setLocalStorage
-- sortItems
+- sortNumbers
