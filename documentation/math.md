@@ -4,6 +4,15 @@ Here you will find a list of all the math functions available in this package. I
 
 All the functions are sorted alphabetically.
 
+Functions:
+
+- [calculateAreaOfCircle](#calculateareaofcircle)
+- [calculateAreaOfRectangle](#calculateareaofrectangle)
+- [calculateAverage](#calculateaverage)
+- [calculateCorrelation](#calculatecorrelation)
+- [calculateDeviationFromMean](#calculatedeviationfrommean)
+- [calculateSum](#calculatesum)
+
 ---
 
 ## **calculateAreaOfCircle**
