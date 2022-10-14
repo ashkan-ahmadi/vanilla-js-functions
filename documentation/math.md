@@ -4,7 +4,8 @@ Here you will find a list of all the math functions available in this package. I
 
 All the functions are sorted alphabetically.
 
-Functions:
+<details>
+  <summary>Table of content:</summary>
 
 - [calculateAreaOfCircle](#calculateareaofcircle)
 - [calculateAreaOfRectangle](#calculateareaofrectangle)
@@ -13,6 +14,8 @@ Functions:
 - [calculateDeviationFromMean](#calculatedeviationfrommean)
 - [calculateSum](#calculatesum)
 - [round](#round)
+
+</details>
 
 ---
 
