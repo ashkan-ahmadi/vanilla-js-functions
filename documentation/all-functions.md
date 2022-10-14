@@ -29,7 +29,7 @@
 - getPositiveNumbers
 - getRandomItem
 - getSmallestNumber
-- hasItemInArray
+- hasItem
 - hasKey
 - hasNumbers
 - isArray
