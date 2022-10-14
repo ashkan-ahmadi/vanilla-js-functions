@@ -163,3 +163,27 @@ console.log(calculateSum(mixed)) // 1
 ```
 
 ---
+
+### round
+
+Rounds a number to the nearest whole number
+
+### Parameters
+
+| params                     | type   | required | default |
+| -------------------------- | ------ | -------- | ------- |
+| number                     | number | yes      |         |
+| {round: nearest, up, down} | object | no       | nearest |
+
+### Return
+
+The number rounded (number)
+
+### Example
+
+```js
+round(4.3)) // 4
+round(4.3), { round: 'nearest' } // 4 (default)
+round(4.3), { round: 'up' } // 5
+round(4.3), { round: 'down' } // 4
+```
