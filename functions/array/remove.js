@@ -1,5 +1,11 @@
 import { isNumber } from '../math/is.js'
 
+export const removeDuplicates = array => {
+  if (!Array.isArray(array)) throw new Error('Argument must be an array')
+
+  return Array.from(new Set(array))
+}
+
 export const removeItemFromArray = (item, array) => {
   if (!Array.isArray(array)) throw new Error('Argument must be an array')
 
@@ -12,12 +18,6 @@ export const removeItemFromArray = (item, array) => {
   }
 
   return false
-}
-
-export const removeDuplicates = array => {
-  if (!Array.isArray(array)) throw new Error('Argument must be an array')
-
-  return Array.from(new Set(array))
 }
 
 export const removeNonNumberItems = array => {

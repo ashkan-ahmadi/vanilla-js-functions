@@ -1,3 +1,14 @@
+export const $ = target => document.querySelector(target)
+
+export const $$ = target => document.querySelectorAll(target)
+
+export const addGlobalEventListener = (type, selector, callback) => {
+  // https://www.youtube.com/watch?v=XF1_MlZ5l6M
+  document.addEventListener(type, e => {
+    if (e.target.matches(selector)) callback(e)
+  })
+}
+
 export const scrollToElementById = (id, options = {}) => {
   //Finds y value of given object
   //https://stackoverflow.com/a/11986374
@@ -33,17 +44,6 @@ export const scrollToElementById = (id, options = {}) => {
   window.scroll(0, findPos(targetElement))
 }
 
-export const $ = target => document.querySelector(target)
-
-export const $$ = target => document.querySelectorAll(target)
-
 export const scrollToTopOfPage = () => {
   window.scrollTo(0, 0)
-}
-
-export const addGlobalEventListener = (type, selector, callback) => {
-  // https://www.youtube.com/watch?v=XF1_MlZ5l6M
-  document.addEventListener(type, e => {
-    if (e.target.matches(selector)) callback(e)
-  })
 }
