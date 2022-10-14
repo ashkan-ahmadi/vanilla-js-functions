@@ -1,3 +1,4 @@
+import { removeNonNumberItems } from '../functions.js'
 import { isNumber } from './is.js'
 
 export const calculateSum = array => {
@@ -105,4 +106,23 @@ export const calculateCorrelation = (x, y) => {
   const sumb2 = calculateSum(b2)
 
   return sumMultiplied / Math.sqrt(suma2 * sumb2)
+}
+
+export const calculateMedian = array => {
+  // https://stackoverflow.com/a/45309555
+  if (!Array.isArray(array)) throw new Error('Argument must be an array')
+
+  if (array.length === 0) throw new Error('Array is empty')
+
+  const items = removeNonNumberItems([...array])
+
+  items.sort(function (a, b) {
+    return a - b
+  })
+
+  const half = Math.floor(items.length / 2)
+
+  if (items.length % 2) return items[half]
+
+  return (items[half - 1] + items[half]) / 2.0
 }

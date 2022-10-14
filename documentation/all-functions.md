@@ -10,6 +10,7 @@
 - calculateDeviationFromMean
 - calculateFactorial
 - calculateHypotenuse
+- calculateMedian
 - calculateProduct
 - calculateStandardDeviation
 - calculateSum
