@@ -45,6 +45,7 @@
 - removeDuplicates
 - removeItemFromArray
 - removeNonNumberItems
+- removeNonStringItems
 - roundNumber
 - scrollToElementById
 - scrollToTopOfPage
