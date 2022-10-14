@@ -12,6 +12,7 @@ Functions:
 - [calculateCorrelation](#calculatecorrelation)
 - [calculateDeviationFromMean](#calculatedeviationfrommean)
 - [calculateSum](#calculatesum)
+- [round](#round)
 
 ---
 
