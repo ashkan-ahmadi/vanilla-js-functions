@@ -52,3 +52,4 @@
 - setCookie
 - setLocalStorage
 - sortNumbers
+- sortStrings
