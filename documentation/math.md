@@ -12,6 +12,11 @@ All the functions are sorted alphabetically.
 - [calculateAverage](#calculateaverage)
 - [calculateCorrelation](#calculatecorrelation)
 - [calculateDeviationFromMean](#calculatedeviationfrommean)
+- [calculateFactorial](#calculatefactorial)
+- [calculateHypotenuse](#calculatehypotenuse)
+- [calculateMedian](#calculatemedian)
+- [calculateProduct](#calculateproduct)
+- [calculateStandardDeviation](#calculatestandarddeviation)
 - [calculateSum](#calculatesum)
 - [round](#round)
 
@@ -142,6 +147,121 @@ console.log(calculateDeviationFromMean(data, calculateAverage(data)))
 
 ---
 
+## **calculateFactorial**
+
+Calculates the factorial value of a number.
+
+### Parameters
+
+| params   | type   | required | default |
+| -------- | ------ | -------- | ------- |
+| `number` | number | yes      |         |
+
+### Return
+
+The factorial value of the number (number)
+
+### Example
+
+```js
+console.log(calculateFactorial(6)) // 720
+```
+
+---
+
+## **calculateHypotenuse**
+
+Calculates the length of the hypotenuse of a right-angle triangle given its two sides
+
+### Parameters
+
+| params | type   | required | default |
+| ------ | ------ | -------- | ------- |
+| `a`    | number | yes      |         |
+| `b`    | number | yes      |         |
+
+### Return
+
+The length of the hypotenuse (number)
+
+### Example
+
+```js
+console.log(calculateHypotenuse(3, 4)) // 5
+```
+
+---
+
+## **calculateMedian**
+
+Calculates the median of an array of numbers. It ignores any item that is not a number.
+
+### Parameters
+
+| params  | type  | required | default |
+| ------- | ----- | -------- | ------- |
+| `array` | array | yes      |         |
+
+### Return
+
+The median (number)
+
+### Example
+
+```js
+console.log(calculateHypotenuse(3, 4)) // 5
+```
+
+---
+
+## **calculateProduct**
+
+Calculates the product of the numbers in an array. It multiplies every item with the next item.
+
+### Parameters
+
+| params  | type  | required | default |
+| ------- | ----- | -------- | ------- |
+| `array` | array | yes      |         |
+
+### Return
+
+The product (number)
+
+### Example
+
+```js
+const numbers = [2, 3, 4]
+console.log(calculateProduct(numbers)) // 24 (2 * 3 * 4)
+```
+
+---
+
+## **calculateStandardDeviation**
+
+Calculates the standard deviation of an array of numbers. It ignores any non number item
+
+### Parameters
+
+| params   | type    | required | default |
+| -------- | ------- | -------- | ------- |
+| `array`  | array   | yes      |         |
+| `sample` | boolean | no       | `false` |
+
+### Return
+
+The standard deviation (number)
+
+### Example
+
+```js
+const numbers = [3, 7, 1, 7, 4, 9]
+console.log(calculateStandardDeviation(numbers)) // 2.733536578
+console.log(calculateStandardDeviation(numbers, true)) // 2.994439291
+```
+
+---
+
 ## **calculateSum**
 
 Calculates the sum of all the numbers in an array. It ignores any item that is not a number.
@@ -191,3 +311,29 @@ round(4.3), { round: 'nearest' } // 4 (default)
 round(4.3), { round: 'up' } // 5
 round(4.3), { round: 'down' } // 4
 ```
+
+## **round**
+
+Rounds a number to the nearest whole number
+
+### Parameters
+
+| params                     | type   | required | default |
+| -------------------------- | ------ | -------- | ------- |
+| number                     | number | yes      |         |
+| {round: nearest, up, down} | object | no       | nearest |
+
+### Return
+
+The number rounded (number)
+
+### Example
+
+```js
+round(4.3)) // 4
+round(4.3), { round: 'nearest' } // 4 (default)
+round(4.3), { round: 'up' } // 5
+round(4.3), { round: 'down' } // 4
+```
+
+---
