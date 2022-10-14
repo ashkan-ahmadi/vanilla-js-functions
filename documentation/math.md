@@ -16,6 +16,10 @@ Calculates the area of a circle based on its radius.
 | -------- | ------ | -------- | ------- |
 | `radius` | number | yes      | 1       |
 
+### Return
+
+The area of the circle (number)
+
 ### Example
 
 ```js
@@ -35,6 +39,10 @@ Calculates the area of a rectangle based on its two sides.
 | `width`  | number | yes      | 10      |
 | `height` | number | yes      | 1       |
 
+### Return
+
+The area of the rectangle (number)
+
 ### Example
 
 ```js
@@ -53,6 +61,10 @@ Calculates the average of all the numbers in an array. It ignores any item that 
 | ------- | ----- | -------- | ------- |
 | `array` | array | yes      |         |
 
+### Return
+
+The average/mean of the numbers in the array (number)
+
 ### Example
 
 ```js
@@ -61,6 +73,58 @@ console.log(calculateSum(numbersOnly)) // 2.5
 
 const mixed = [1, 2, 3, '4']
 console.log(calculateSum(mixed)) // 2
+```
+
+---
+
+## **calculateCorrelation**
+
+Calculates the correlation between two sets of data. Both sets of data must be arrays and have the same length
+
+### Parameters
+
+| params | type  | required | default |
+| ------ | ----- | -------- | ------- |
+| `a`    | array | yes      |         |
+| `b`    | array | yes      |         |
+
+### Return
+
+The correlation value of the two data sets (number)
+
+### Example
+
+```js
+const dataA = [1, 2, 3, 4]
+const dataB = [2, 4, 5, 6]
+console.log(calculateCorrelation(numbersOnly)) // 0.4242640687119285
+```
+
+---
+
+## **calculateDeviationFromMean**
+
+Calculates the deviation of every number in a dataset from the mean of the dataset.
+
+You can use the function `calculateAverage` if you don't know the mean in advance.
+
+### Parameters
+
+| params  | type   | required | default |
+| ------- | ------ | -------- | ------- |
+| `array` | array  | yes      |         |
+| `mean`  | number | yes      |         |
+
+### Return
+
+An array of numbers
+
+### Example
+
+```js
+const data = [25, 50, 60, 80]
+console.log(calculateDeviationFromMean(data, calculateAverage(data)))
+// returns: [ -28.75, -3.75, 6.25, 26.25 ]
 ```
 
 ---
@@ -74,6 +138,10 @@ Calculates the sum of all the numbers in an array. It ignores any item that is n
 | params  | type  | required | default |
 | ------- | ----- | -------- | ------- |
 | `array` | array | yes      |         |
+
+### Return
+
+The sum of the numbers in the array (number)
 
 ### Example
 
