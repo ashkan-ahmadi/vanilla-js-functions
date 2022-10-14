@@ -29,6 +29,7 @@
 - getPositiveNumbers
 - getRandomItem
 - getSmallestNumber
+- HasAllItems
 - hasItem
 - hasKey
 - hasNumbers
