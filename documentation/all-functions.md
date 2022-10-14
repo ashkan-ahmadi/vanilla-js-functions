@@ -51,5 +51,7 @@
 - scrollToTopOfPage
 - setCookie
 - setLocalStorage
+- shuffleItems
+- shuffleNumbers
 - sortNumbers
 - sortStrings
