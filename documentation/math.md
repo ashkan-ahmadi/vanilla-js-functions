@@ -288,29 +288,216 @@ console.log(calculateSum(mixed)) // 1
 
 ---
 
-### round
+## **generateHEXColor**
 
-Rounds a number to the nearest whole number
+Generates a random HEX color every time. It outputs the # as well.
 
 ### Parameters
 
-| params                     | type   | required | default |
-| -------------------------- | ------ | -------- | ------- |
-| number                     | number | yes      |         |
-| {round: nearest, up, down} | object | no       | nearest |
+None
 
 ### Return
 
-The number rounded (number)
+A HEX color value (string)
 
 ### Example
 
 ```js
-round(4.3)) // 4
-round(4.3), { round: 'nearest' } // 4 (default)
-round(4.3), { round: 'up' } // 5
-round(4.3), { round: 'down' } // 4
+generateHEXColor() // #a83b12
+generateHEXColor() // 09e321
 ```
+
+---
+
+## **generateRandomNumber**
+
+Generates a random whole number. Both `min` and `max` are inclusive.
+
+### Parameters
+
+### Parameters
+
+| params | type   | required | default |
+| ------ | ------ | -------- | ------- |
+| `min`  | number | no       | 1       |
+| `max`  | number | no       | 100     |
+
+### Return
+
+A random whole number (number)
+
+### Example
+
+```js
+console.log(generateRandomNumber()) // 34
+console.log(generateRandomNumber(538, 842)) // 729
+```
+
+---
+
+## **generateRangeOfNumbers**
+
+Generates a rangle of numbers starting from the minimum to the maximum values. A step can be defined as well. Both `min` and `max` are inclusive.
+
+### Parameters
+
+| params   | type   | required | default |
+| -------- | ------ | -------- | ------- |
+| `min`    | number | no       | 1       |
+| `max`    | number | no       | 10      |
+| `string` | number | no       | 1       |
+
+### Return
+
+An array with the numbers
+
+### Example
+
+```js
+console.log(generateRangeOfNumbers()) // [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+console.log(generateRandomNumber(-3, 3)) // [-3, -2, -1, 0, 1, 2, 3]
+console.log(generateRandomNumber(1, 3, 0.5)) // [1, 1.5, 2, 2.5, 3]
+```
+
+---
+
+## **getEvenNumbers**
+
+Gets all the even numbers in an array. This is the opposite of `getOddNumbers`.
+
+### Parameters
+
+| params  | type  | required | default |
+| ------- | ----- | -------- | ------- |
+| `array` | array | yes      |         |
+
+### Return
+
+An array with the all the even numbers
+
+### Example
+
+```js
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+console.log(getEvenNumbers(numbers)) // [1, 3, 5, 7, 9]
+```
+
+---
+
+## **getLargestNumber**
+
+Gets the largest number in an array. This is the opposite of `getSmallestNumber`
+
+### Parameters
+
+| params  | type  | required | default |
+| ------- | ----- | -------- | ------- |
+| `array` | array | yes      |         |
+
+### Return
+
+The largest number in the array (number)
+
+### Example
+
+```js
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+console.log(getLargestNumber(numbers)) // 9
+```
+
+---
+
+## **getNegativeNumbers**
+
+Gets all the negative numbers in an array. This is the opposite of `getPositiveNumbers`.
+
+### Parameters
+
+| params  | type  | required | default |
+| ------- | ----- | -------- | ------- |
+| `array` | array | yes      |         |
+
+### Return
+
+An array with the all the negative numbers
+
+### Example
+
+```js
+const numbers = [1, -3, 0, -5.7, 8, -0.02]
+console.log(getNegativeNumbers(numbers)) // [-3, -5.7, -0.02]
+```
+
+---
+
+## **getOddNumbers**
+
+Gets all the odd numbers in an array. This is the opposite of `getEvenNumbers`.
+
+### Parameters
+
+| params  | type  | required | default |
+| ------- | ----- | -------- | ------- |
+| `array` | array | yes      |         |
+
+### Return
+
+An array with the all the odd numbers
+
+### Example
+
+```js
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+console.log(getOddNumbers(numbers)) // [2, 4, 6, 8]
+```
+
+---
+
+## **getPositiveNumbers**
+
+Gets all the positive numbers in an array. This is the opposite of `getNegativeNumbers`.
+
+### Parameters
+
+| params  | type  | required | default |
+| ------- | ----- | -------- | ------- |
+| `array` | array | yes      |         |
+
+### Return
+
+An array with the all the positive numbers
+
+### Example
+
+```js
+const numbers = [1, -3, 0, -5.7, 8, -0.02]
+console.log(getPositiveNumbers(numbers)) // [1, 0, 8]
+```
+
+---
+
+## **getSmallestNumber**
+
+Gets the smallest number in an array. This is the opposite of `getLargestNumber`
+
+### Parameters
+
+| params  | type  | required | default |
+| ------- | ----- | -------- | ------- |
+| `array` | array | yes      |         |
+
+### Return
+
+The smallest number in the array (number)
+
+### Example
+
+```js
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+console.log(getSmallestNumber(numbers)) // 1
+```
+
+---
 
 ## **round**
 
