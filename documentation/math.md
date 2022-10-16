@@ -616,6 +616,190 @@ console.log(hasSmaller(50, grades)) // false
 
 ---
 
+## **isEvenNumber**
+
+Checks if a number is even or not. This is the opposite of `isOddNumber`.
+
+### Parameters
+
+| params   | type   | required | default |
+| -------- | ------ | -------- | ------- |
+| `number` | number | yes      |         |
+
+### Return
+
+`true` if number is even
+
+### Example
+
+```js
+console.log(isEvenNumber(50)) // true
+console.log(isEvenNumber(33)) // false
+```
+
+---
+
+## **isFloatNumber**
+
+Checks if a number is float (with decimal) or not. This is the opposite of `isWholeNumber`.
+
+### Parameters
+
+| params   | type   | required | default |
+| -------- | ------ | -------- | ------- |
+| `number` | number | yes      |         |
+
+### Return
+
+`true` if number is float (with decimal)
+
+### Example
+
+```js
+console.log(isFloatNumber(3.5)) // true
+console.log(isFloatNumber(3)) // false
+```
+
+---
+
+## **isNegativeNumber**
+
+Checks if a number is negative (less than 0). This is the opposite of `isPositiveNumber`.
+
+### Parameters
+
+| params   | type   | required | default |
+| -------- | ------ | -------- | ------- |
+| `number` | number | yes      |         |
+
+### Return
+
+`true` if number is negative
+
+### Example
+
+```js
+console.log(isNegativeNumber(-4)) // true
+console.log(isNegativeNumber(1.32)) // false
+```
+
+---
+
+## **isNumber**
+
+Checks if a value is of the type `number` or not
+
+### Parameters
+
+| params   | type   | required | default |
+| -------- | ------ | -------- | ------- |
+| `number` | number | yes      |         |
+
+### Return
+
+`true` if number is of the type `number`
+
+### Example
+
+```js
+console.log(isOddNumber(7)) // true
+console.log(isOddNumber('7')) // false
+```
+
+---
+
+## **isOddNumber**
+
+Checks if a number is odd. This is the opposite of `isEvenNumber`.
+
+### Parameters
+
+| params   | type   | required | default |
+| -------- | ------ | -------- | ------- |
+| `number` | number | yes      |         |
+
+### Return
+
+`true` if number is odd
+
+### Example
+
+```js
+console.log(isOddNumber(7)) // true
+console.log(isOddNumber(12)) // false
+```
+
+---
+
+## **isPositiveNumber**
+
+Checks if a number is positive (less than 0). This is the opposite of `isNegativeeNumber`.
+
+### Parameters
+
+| params   | type   | required | default |
+| -------- | ------ | -------- | ------- |
+| `number` | number | yes      |         |
+
+### Return
+
+`true` if number is positive
+
+### Example
+
+```js
+console.log(isPositiveNumber(-4)) // false
+console.log(isPositiveNumber(1.32)) // true
+```
+
+---
+
+## **isPrimeNumber**
+
+Checks if a number is prime (divisible by itself and 1 only)
+
+### Parameters
+
+| params   | type   | required | default |
+| -------- | ------ | -------- | ------- |
+| `number` | number | yes      |         |
+
+### Return
+
+`true` if number is prime
+
+### Example
+
+```js
+console.log(isPrimeNumber(7)) // true
+console.log(isPrimeNumber(12)) // false
+```
+
+---
+
+## **isWholeNumber**
+
+Checks if a number is whole (without decimal) or not. This is the opposite of `isFloatNumber`.
+
+### Parameters
+
+| params   | type   | required | default |
+| -------- | ------ | -------- | ------- |
+| `number` | number | yes      |         |
+
+### Return
+
+`true` if number is whole
+
+### Example
+
+```js
+console.log(isFloatNumber(3.5)) // false
+console.log(isFloatNumber(3)) // true
+```
+
+---
+
 ## **roundNumber**
 
 Rounds a number to the nearest whole number
