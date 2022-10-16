@@ -499,7 +499,124 @@ console.log(getSmallestNumber(numbers)) // 1
 
 ---
 
-## **round**
+## **hasEvenNumbers**
+
+Checks if an array has any even numbers (at least one). This is the opposite of `hasOddNumbers`.
+
+### Parameters
+
+| params  | type  | required | default |
+| ------- | ----- | -------- | ------- |
+| `array` | array | yes      |         |
+
+### Return
+
+`true` if array has at least one even number
+
+### Example
+
+```js
+const numbers = [1, 2, 3, 4]
+console.log(hasEvenNumbers(numbers)) // true
+```
+
+---
+
+## **hasOddNumbers**
+
+Checks if an array has any odd numbers (at least one). This is the opposite of `hasEvenNumbers`.
+
+### Parameters
+
+| params  | type  | required | default |
+| ------- | ----- | -------- | ------- |
+| `array` | array | yes      |         |
+
+### Return
+
+`true` if array has at least one odd number
+
+### Example
+
+```js
+const numbers = [1, 2, 3, 4]
+console.log(hasOddNumbers(numbers)) // true
+```
+
+---
+
+## **hasZero**
+
+Checks if an array has the number zero in it
+
+### Parameters
+
+| params  | type  | required | default |
+| ------- | ----- | -------- | ------- |
+| `array` | array | yes      |         |
+
+### Return
+
+`true` if array has at least one zero
+
+### Example
+
+```js
+const numbers = [1, 2, 3, 4]
+console.log(hasZero(numbers)) // false
+```
+
+---
+
+## **hasBiggerThan**
+
+Checks if an array has any number bigger than a specific number. This is the opposite of `hasSmallerThan`.
+
+### Parameters
+
+| params   | type   | required | default |
+| -------- | ------ | -------- | ------- |
+| `number` | number | yes      |         |
+| `array`  | array  | yes      |         |
+
+### Return
+
+`true` if array has at least one number bigger than `number`
+
+### Example
+
+```js
+const grades = [75, 91, 43, 87]
+console.log(hasBiggerThan(90, grades)) // true
+```
+
+---
+
+## **hasSmallerThan**
+
+Checks if an array has any number smaller than a specific number. This is the opposite of `hasBiggerThan`.
+
+### Parameters
+
+| params   | type   | required | default |
+| -------- | ------ | -------- | ------- |
+| `number` | number | yes      |         |
+| `array`  | array  | yes      |         |
+
+### Return
+
+`true` if array has at least one number smaller than `number`
+
+### Example
+
+```js
+const grades = [75, 91, 43, 87]
+console.log(hasSmaller(50, grades)) // false
+```
+
+---
+
+## **roundNumber**
 
 Rounds a number to the nearest whole number
 
@@ -517,10 +634,10 @@ The number rounded (number)
 ### Example
 
 ```js
-round(4.3)) // 4
-round(4.3), { round: 'nearest' } // 4 (default)
-round(4.3), { round: 'up' } // 5
-round(4.3), { round: 'down' } // 4
+roundNumber(4.3)) // 4
+roundNumber(4.3), { round: 'nearest' } // 4 (default)
+roundNumber(4.3), { round: 'up' } // 5
+roundNumber(4.3), { round: 'down' } // 4
 ```
 
 ---
