@@ -730,6 +730,7 @@ Checks if a value is of the type `number` or not. If `ignoreType` is set to `tru
 ```js
 console.log(isOddNumber(7)) // true
 console.log(isOddNumber('7')) // false
+console.log(isOddNumber('7', true)) // true
 ```
 
 ---
