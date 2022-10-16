@@ -4,7 +4,9 @@
   "description": "This is a series of Javascript helper functions you can use in any project.",
   "main": "index.js",
   "type": "module",
-  "scripts": {},
+  "scripts": {
+    "nodemon": "nodemon index.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ashkan-ahmadi/vanilla-js-functions.git"
@@ -19,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/ashkan-ahmadi/vanilla-js-functions/issues"
   },
-  "homepage": "https://github.com/ashkan-ahmadi/vanilla-js-functions#readme"
+  "homepage": "https://github.com/ashkan-ahmadi/vanilla-js-functions#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
 }
