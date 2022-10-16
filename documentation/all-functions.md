@@ -38,6 +38,7 @@
 - isFloatNumber
 - isNegativeNumber
 - isNumber
+- isObject
 - isOddNumber
 - isPalindrome
 - isPositiveNumber
