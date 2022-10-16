@@ -109,10 +109,10 @@ The average/mean of the numbers in the array (number)
 
 ```js
 const numbersOnly = [1, 2, 3, 4]
-console.log(calculateSum(numbersOnly)) // 2.5
+console.log(calculateAverage(numbersOnly)) // 2.5
 
 const mixed = [1, 2, 3, '4']
-console.log(calculateSum(mixed)) // 2
+console.log(calculateAverage(mixed)) // 2
 ```
 
 ---
@@ -231,7 +231,10 @@ The median (number)
 ### Example
 
 ```js
-console.log(calculateHypotenuse(3, 4)) // 5
+const dataset = [3, 2, 5, 1, -8]
+const dataset2 = [8, 9, -21, -6]
+console.log(calculateMedian(dataset)) // 2
+console.log(calculateMedian(dataset2)) // 1
 ```
 
 ---
