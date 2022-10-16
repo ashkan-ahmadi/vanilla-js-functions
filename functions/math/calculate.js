@@ -83,13 +83,13 @@ export const calculateMedian = array => {
 
   const items = removeNonNumberItems([...array])
 
-  sortNumbers(items)
+  const sortedItems = sortNumbers(items)
 
-  const half = Math.floor(items.length / 2)
+  const half = Math.floor(sortedItems.length / 2)
 
-  if (items.length % 2) return items[half]
+  if (sortedItems.length % 2) return sortedItems[half]
 
-  return (items[half - 1] + items[half]) / 2.0
+  return (sortedItems[half - 1] + sortedItems[half]) / 2.0
 }
 
 export const calculateProduct = array => {
