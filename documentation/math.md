@@ -542,7 +542,7 @@ Checks if an array has any even numbers (at least one). This is the opposite of 
 
 ```js
 const numbers = [1, 2, 3, 4]
-console.log(hasEvenNumbers(numbers)) // true
+console.log(hasEvenNumbers(numbers)) // true (2, 4)
 ```
 
 ---
@@ -565,7 +565,7 @@ Checks if an array has any odd numbers (at least one). This is the opposite of `
 
 ```js
 const numbers = [1, 2, 3, 4]
-console.log(hasOddNumbers(numbers)) // true
+console.log(hasOddNumbers(numbers)) // true (1, 3)
 ```
 
 ---
@@ -612,7 +612,7 @@ Checks if an array has any number bigger than a specific number. This is the opp
 
 ```js
 const grades = [75, 91, 43, 87]
-console.log(hasBiggerThan(90, grades)) // true
+console.log(hasBiggerThan(90, grades)) // true (91)
 ```
 
 ---
@@ -636,7 +636,7 @@ Checks if an array has any number smaller than a specific number. This is the op
 
 ```js
 const grades = [75, 91, 43, 87]
-console.log(hasSmaller(50, grades)) // false
+console.log(hasSmaller(50, grades)) // true (43)
 ```
 
 ---
@@ -712,13 +712,14 @@ console.log(isNegativeNumber(1.32)) // false
 
 ## **isNumber**
 
-Checks if a value is of the type `number` or not
+Checks if a value is of the type `number` or not. If `ignoreType` is set to `true`, the function checks the value only and numbers as strings would pass as numbers as well (in this case, `isNumber(4)` and `isNumber('4')` would return `true`).
 
 ### Parameters
 
-| params   | type   | required | default |
-| -------- | ------ | -------- | ------- |
-| `number` | number | yes      |         |
+| params       | type    | required | default |
+| ------------ | ------- | -------- | ------- |
+| `number`     | number  | yes      |         |
+| `ignoreType` | boolean | no       | false   |
 
 ### Return
 
@@ -819,8 +820,8 @@ Checks if a number is whole (without decimal) or not. This is the opposite of `i
 ### Example
 
 ```js
-console.log(isFloatNumber(3.5)) // false
-console.log(isFloatNumber(3)) // true
+console.log(isWholeNumber(3.5)) // false
+console.log(isWholeNumber(3)) // true
 ```
 
 ---
