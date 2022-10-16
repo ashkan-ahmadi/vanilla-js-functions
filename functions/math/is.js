@@ -48,5 +48,6 @@ export const isPrimeNumber = number => {
 
 export const isWholeNumber = number => {
   if (typeof number !== 'number') throw new Error('Must provide a number type.')
+  // Math.trunc returns the same as Math.floor
   return number === Math.trunc(number)
 }
