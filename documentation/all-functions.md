@@ -30,9 +30,14 @@
 - getRandomItem
 - getSmallestNumber
 - HasAllItems
+- hasBiggerThan
+- hasEvenNumbers
 - hasItem
 - hasKey
 - hasNumbers
+- hasOddNumbers
+- hasSmallerThan
+- hasZero
 - isArray
 - isEvenNumber
 - isFloatNumber
