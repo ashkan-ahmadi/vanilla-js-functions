@@ -37,6 +37,7 @@ I have done my best to name the functions in a descriptive and clear manner.
 - All functions starting with `is` and `has` (e.g. `isString`) return `true` or `false`
 - All functions follow the camelCase naming convention
 - All functions have type checks to make sure the right type is passed in
+- All plural function names (e.g. `getPositiveNumbers`) return an array or an object or a combination of both. All singular functional names (e.g. `getSmallestNumber`) return one value
 
 ## FAQ
 
