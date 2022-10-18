@@ -16,6 +16,7 @@
 - calculateSum
 - capitalizeFirstLetter
 - convertToCamelCase
+- copyTextToClipboard
 - filterOutNegativeNumbers
 - generateHEXColor
 - generateRandomNumber
