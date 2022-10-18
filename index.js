@@ -1,3 +1,1 @@
-import { generateRandomNumber } from './functions/functions.js'
-
-console.log(generateRandomNumber(400, 900))
+import { copyTextToClipboard } from './functions/functions.js'
