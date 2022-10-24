@@ -15,6 +15,7 @@ All the functions are sorted alphabetically.
 - [calculateFactorial](#calculatefactorial)
 - [calculateHypotenuse](#calculatehypotenuse)
 - [calculateMedian](#calculatemedian)
+- [calculatePMT](#calculatepmt)
 - [calculateProduct](#calculateproduct)
 - [calculateStandardDeviation](#calculatestandarddeviation)
 - [calculateSum](#calculatesum)
@@ -235,6 +236,40 @@ const dataset = [3, 2, 5, 1, -8]
 const dataset2 = [8, 9, -21, -6]
 console.log(calculateMedian(dataset)) // 2
 console.log(calculateMedian(dataset2)) // 1
+```
+
+---
+
+## **calculatePMT**
+
+Calculates the payments for a loan based on a constant annual interest rate and constant payments
+
+### Parameters
+
+You must pass an object with the following keys
+
+| params               | type   | required | default |
+| -------------------- | ------ | -------- | ------- |
+| `loanAmount`         | number | yes      |         |
+| `years`              | number | yes      |         |
+| `paymentsPerYear`    | number | yes      |         |
+| `annualInterestRate` | number | yes      |         |
+
+### Return
+
+The payment amount per period
+
+### Example
+
+```js
+const values = {
+  loanAmount: 1000,
+  years: 3,
+  paymentsPerYear: 12,
+  annualInterestRate: 0.02,
+}
+
+console.log(calculatePMT(values)) // 28.642578732455764
 ```
 
 ---

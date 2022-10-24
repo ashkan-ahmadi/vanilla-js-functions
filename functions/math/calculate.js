@@ -1,4 +1,4 @@
-import { removeNonNumberItems, isNumber, sortNumbers } from '../functions.js'
+import { removeNonNumberItems, isNumber, sortNumbers, isObject } from '../functions.js'
 
 export const calculateAreaOfCircle = (radius = 1) => {
   if (typeof radius !== 'number') throw new Error('Must provide a number type.')
@@ -90,6 +90,31 @@ export const calculateMedian = array => {
   if (sortedItems.length % 2) return sortedItems[half]
 
   return (sortedItems[half - 1] + sortedItems[half]) / 2.0
+}
+
+export const calculatePMT = values => {
+  /**
+   * Calculates the monthly payment amount of a loan
+   *
+   * @source https://www.mymove.com/mortgage/mortgage-calculation/
+   * @param {number} values.loanAmount - The total amount of loan borrowed
+   * @param {number} values.years - The total number of years to pay back the loan
+   * @param {number} values.paymentsPerYear - The number of payments per year
+   * @param {number} values.annualInterestRate - The interest rate per period/payment
+   * @return {number} amount to pay per period
+   */
+
+  if (!isObject(values)) throw new Error('Type error: must provide an object')
+
+  const { loanAmount, years, paymentsPerYear, annualInterestRate } = values
+
+  const totalPeriods = years * paymentsPerYear
+  const interestPerPeriod = annualInterestRate / paymentsPerYear
+
+  const numerator = loanAmount * (interestPerPeriod * (1 + interestPerPeriod) ** totalPeriods)
+  const denominator = (1 + interestPerPeriod) ** totalPeriods - 1
+
+  return numerator / denominator
 }
 
 export const calculateProduct = array => {

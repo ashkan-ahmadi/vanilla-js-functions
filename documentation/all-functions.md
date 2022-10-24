@@ -11,6 +11,7 @@
 - calculateFactorial
 - calculateHypotenuse
 - calculateMedian
+- calculatePMT
 - calculateProduct
 - calculateStandardDeviation
 - calculateSum
