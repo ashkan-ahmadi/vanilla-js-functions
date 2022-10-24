@@ -10,6 +10,7 @@ All the functions are sorted alphabetically.
 - [calculateAreaOfCircle](#calculateareaofcircle)
 - [calculateAreaOfRectangle](#calculateareaofrectangle)
 - [calculateAverage](#calculateaverage)
+- [calculateBMI](#calculatebmi)
 - [calculateCorrelation](#calculatecorrelation)
 - [calculateDeviationFromMean](#calculatedeviationfrommean)
 - [calculateFactorial](#calculatefactorial)
@@ -114,6 +115,29 @@ console.log(calculateAverage(numbersOnly)) // 2.5
 
 const mixed = [1, 2, 3, '4']
 console.log(calculateAverage(mixed)) // 2
+```
+
+---
+
+## **calculateBMI**
+
+Calculates the Body Mass Index (BMI)
+
+### Parameters
+
+| params   | type  | required | default |
+| -------- | ----- | -------- | ------- |
+| `weight` | array | yes      |         |
+| `height` | array | yes      |         |
+
+### Return
+
+The BMI (number)
+
+### Example
+
+```js
+console.log(calculateBMI()) // 22.1606648199446
 ```
 
 ---

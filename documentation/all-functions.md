@@ -6,6 +6,7 @@
 - calculateAreaOfCircle
 - calculateAreaOfRectangle
 - calculateAverage
+- calculateBMI
 - calculateCorrelation
 - calculateDeviationFromMean
 - calculateFactorial

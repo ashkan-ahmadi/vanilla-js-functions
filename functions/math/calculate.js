@@ -17,6 +17,11 @@ export const calculateAverage = array => {
   return total / count
 }
 
+export const calculateBMI = (weight, height) => {
+  if (!isNumber(weight) || !isNumber(height)) throw new Error('Type error: must pass number')
+  return weight / height ** 2
+}
+
 export const calculateCorrelation = (x, y) => {
   if (!Array.isArray(x) || !Array.isArray(y)) throw new Error('Argument must be an array')
   if (x.length !== y.length) throw new Error('The arrays do not have the same length.')
