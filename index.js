@@ -1,1 +1,3 @@
-import { copyTextToClipboard } from './functions/functions.js'
+import { convertKgToLbs } from './functions/functions.js'
+
+console.log(convertKgToLbs(75))
