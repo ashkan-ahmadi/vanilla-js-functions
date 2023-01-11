@@ -1,4 +1,5 @@
 export * from './calculate.js'
+export * from './convert.js'
 export * from './generate.js'
 export * from './get.js'
 export * from './has.js'

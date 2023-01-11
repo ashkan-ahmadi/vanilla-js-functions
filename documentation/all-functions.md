@@ -17,6 +17,11 @@
 - calculateStandardDeviation
 - calculateSum
 - capitalizeFirstLetter
+- convertKgToLbs
+- convertKmToMiles
+- convertLbsToKg
+- convertMilesToKm
+- convertMtpsToKmps
 - convertToCamelCase
 - copyTextToClipboard
 - filterOutNegativeNumbers

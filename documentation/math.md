@@ -372,6 +372,26 @@ console.log(calculateSum(mixed)) // 1
 
 ---
 
+## **convertKgToLbs**
+
+--
+
+## **convertKmToMiles**
+
+--
+
+## **convertLbsToKg**
+
+--
+
+## **convertMilesToKm**
+
+--
+
+## **convertMtpsToKmps**
+
+--
+
 ## **generateHEXColor**
 
 Generates a random HEX color every time. It outputs the # as well.
