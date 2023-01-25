@@ -1,4 +1,5 @@
 export * from './filter.js'
+export * from './format.js'
 export * from './get.js'
 export * from './has.js'
 export * from './is.js'
