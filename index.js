@@ -1,3 +1,3 @@
-import { convertKgToLbs } from './functions/functions.js'
+import { formatPrice } from './functions/functions.js'
 
-console.log(convertKgToLbs(75))
+console.log(formatPrice(32328989.98787))
