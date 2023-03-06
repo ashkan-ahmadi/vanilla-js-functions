@@ -3,6 +3,7 @@
 - $
 - $$
 - addGlobalEventListener
+- addParamsToURL
 - calculateAreaOfCircle
 - calculateAreaOfRectangle
 - calculateAverage
@@ -30,6 +31,7 @@
 - generateRangeOfNumbers
 - getCookie
 - getEvenNumbers
+- getFormDataAsObject
 - getLargestNumber
 - getLocalStorage
 - getNegativeNumbers
