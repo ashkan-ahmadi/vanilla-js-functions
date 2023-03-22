@@ -30,6 +30,7 @@
 - generateRandomNumber
 - generateRangeOfNumbers
 - getCookie
+- getDOMElementPosition
 - getEvenNumbers
 - getFormDataAsObject
 - getLargestNumber
