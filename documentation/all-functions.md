@@ -33,6 +33,7 @@
 - getEvenNumbers
 - getFormDataAsObject
 - getLargestNumber
+- getLastItem
 - getLocalStorage
 - getNegativeNumbers
 - getOddNumbers
