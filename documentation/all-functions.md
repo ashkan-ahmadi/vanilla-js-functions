@@ -30,9 +30,11 @@
 - generateRandomNumber
 - generateRangeOfNumbers
 - getCookie
+- getDOMElementPosition
 - getEvenNumbers
 - getFormDataAsObject
 - getLargestNumber
+- getLastItem
 - getLocalStorage
 - getNegativeNumbers
 - getOddNumbers
