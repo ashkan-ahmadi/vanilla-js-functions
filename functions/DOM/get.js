@@ -12,7 +12,7 @@ export const getFormDataAsObject = form => {
   return Object.fromEntries(formData)
 }
 
-export const getDOMElementPosition = (element, settings = {}) => {
+export const getDOMElementPosition = (element, options = {}) => {
   /**
    * Gets the X and Y positions of an element on the page
    *

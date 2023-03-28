@@ -1,2 +1,5 @@
+export * from './add.js'
 export * from './copy.js'
+export * from './get.js'
 export * from './other.js'
+export * from './scroll.js'

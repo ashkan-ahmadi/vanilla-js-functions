@@ -1,6 +1,6 @@
 import { getDOMElementPosition } from './get.js'
 
-export const scrollToElementById = id => {
+export const scrollToElementById = (id, options = {}) => {
   /**
    * Scrolls the page to an element based on its id
    *
@@ -12,7 +12,7 @@ export const scrollToElementById = id => {
 
   if (!targetElement) throw new Error(`No element with id ${id} was found.`)
 
-  window.scroll(0, getDOMElementPosition(targetElement))
+  window.scroll(0, getDOMElementPosition(targetElement, options))
 }
 
 export const scrollToTopOfPage = () => {
