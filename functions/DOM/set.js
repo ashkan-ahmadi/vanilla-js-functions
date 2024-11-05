@@ -13,7 +13,7 @@
  * setFormDisabledState(myForm, false);
  */
 export function setFormDisabledState(form, isDisabled) {
-  for (let i = 0; i < form.elements.length; i++) {
+  for (let i = 0; i < form?.elements?.length; i++) {
     form.elements[i].disabled = isDisabled
   }
 }
