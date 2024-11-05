@@ -37,3 +37,25 @@ export const getDOMElementPosition = (element, options = {}) => {
     return [curtop] - topMargin
   }
 }
+
+/**
+ * More accurately check the type of a JavaScript object
+ * (c) Chris Ferdinandi, MIT License, https://gomakethings.com
+ * @source https://gomakethings.com/toolkit/helpers/gettype/
+ * @examples
+ *  let arr = getType([]); // array
+ *  let obj = getType({}); // object
+ *  let str = getType(''); // string
+ *  let date = getType(new Date()); // date
+ *  let num = getType(1); // number
+ *  let fn = getType(function () {}); // function
+ *  let reg = getType(/test/i); // regexp
+ *  let bool = getType(true); // boolean
+ *  let nl = getType(null); // null
+ *  let undef = getType(); // undefined
+ * @param  {Object} obj The object
+ * @return {String}     The object type
+ */
+export const getType = obj => {
+  return Object.prototype.toString.call(obj).slice(8, -1).toLowerCase()
+}
