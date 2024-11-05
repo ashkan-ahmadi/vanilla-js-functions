@@ -1,3 +1,6 @@
+/**
+ * TODO: create docblock
+ */
 export const generateHEXColor = () => {
   // source: https://vanillajstoolkit.com/helpers/createcolor/
 
