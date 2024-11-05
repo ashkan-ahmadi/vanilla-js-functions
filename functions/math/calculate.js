@@ -97,18 +97,17 @@ export const calculateMedian = array => {
   return (sortedItems[half - 1] + sortedItems[half]) / 2.0
 }
 
+/**
+ * Calculates the monthly payment amount of a loan
+ *
+ * @source https://www.mymove.com/mortgage/mortgage-calculation/
+ * @param {number} values.loanAmount - The total amount of loan borrowed
+ * @param {number} values.years - The total number of years to pay back the loan
+ * @param {number} values.paymentsPerYear - The number of payments per year
+ * @param {number} values.annualInterestRate - The interest rate per period/payment
+ * @return {number} amount to pay per period
+ */
 export const calculatePMT = values => {
-  /**
-   * Calculates the monthly payment amount of a loan
-   *
-   * @source https://www.mymove.com/mortgage/mortgage-calculation/
-   * @param {number} values.loanAmount - The total amount of loan borrowed
-   * @param {number} values.years - The total number of years to pay back the loan
-   * @param {number} values.paymentsPerYear - The number of payments per year
-   * @param {number} values.annualInterestRate - The interest rate per period/payment
-   * @return {number} amount to pay per period
-   */
-
   if (!isObject(values)) throw new Error('Type error: must provide an object')
 
   const { loanAmount, years, paymentsPerYear, annualInterestRate } = values
