@@ -16,6 +16,16 @@ const text = 'racecar'
 isPalindrome(text) // true
 ```
 
+If you don't want to improve every function's name, you can also import the entire library but you will always need to prefix it with whatever name you want.
+
+```js
+import * as whateverName from 'vanilla-js-functions'
+
+const text = 'racecar'
+
+whateverName.isPalindrome(text) // true
+```
+
 ## Order of parameters
 
 All the functions follow a needle--in-haystack order of paramers. This means that the first argument is the one you want to find in the second argument.
