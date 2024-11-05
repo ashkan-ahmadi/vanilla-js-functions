@@ -25,8 +25,8 @@
   },
   "homepage": "https://github.com/ashkan-ahmadi/vanilla-js-functions#readme",
   "devDependencies": {
-    "nodemon": "^2.0.20",
-    "webpack": "^5.76.3",
+    "nodemon": "^2.0.22",
+    "webpack": "^5.96.1",
     "webpack-cli": "^4.10.0"
   }
 }
